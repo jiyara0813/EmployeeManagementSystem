@@ -83,7 +83,7 @@ You can configure Visual Studio to start both projects at the same time:
 3. Click **Apply** and then **OK**.  
 
 4. Press **F5** or click **Start Debugging**.  
-	- The API will start first (default: `http://localhost:5000`).  
+	- The API will start first (default: `http://localhost:5064`).  
 	- The Windows Forms app will launch and connect to the running API.
 	- Use buttons and try the Application.
 
