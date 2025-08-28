@@ -1,0 +1,44 @@
+-- =============================================
+-- Simple Database Setup Script for EmployeeDB
+-- =============================================
+
+-- 1. Create Database
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'EmployeeDB')
+BEGIN
+    CREATE DATABASE EmployeeDB;
+    PRINT 'Database EmployeeDB created.';
+END
+ELSE
+    PRINT 'Database EmployeeDB already exists.';
+GO
+
+-- 2. Use the Database
+USE EmployeeDB;
+GO
+
+-- 3. Create Employees Table
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Employees' AND xtype='U')
+BEGIN
+    CREATE TABLE Employees (
+        Id INT IDENTITY(1,1) PRIMARY KEY,
+        FirstName NVARCHAR(50) NOT NULL,
+        LastName NVARCHAR(50) NOT NULL,
+        Position NVARCHAR(50) NOT NULL,
+        Salary DECIMAL(18,2) NOT NULL
+    );
+    PRINT 'Table Employees created.';
+END
+ELSE
+    PRINT 'Table Employees already exists.';
+GO
+
+-- 4. Insert Sample Data
+INSERT INTO Employees (FirstName, LastName, Position, Salary)
+VALUES
+('John', 'Doe', 'Software Developer', 50000.00),
+('Jane', 'Smith', 'HR Manager', 60000.00),
+('Alice', 'Johnson', 'QA Tester', 45000.00),
+('Bob', 'Brown', 'Accountant', 52000.00);
+GO
+
+PRINT 'Sample data inserted into Employees table.';

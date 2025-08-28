@@ -1,0 +1,49 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio / Rider / VS Code files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.ide/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.DS_Store
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Entity Framework / Database
+*.mdf
+*.ldf
+*.ndf
+*.db
+
+# Publish
+publish/
+*.Publish.xml
+
+# Resharper / Rider
+_ReSharper*/
+*.DotSettings.user
+
+# Others
+*.bak
+*.backup
+*.swp
+*.tmp
+*.cache
+*.pdb
