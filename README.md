@@ -12,7 +12,6 @@ A simple **Employee Management System** built with **C# Windows Forms** for the 
 - [Installation](#installation)  
 - [Database Setup](#database-setup)
 - [Usage](#usage)  
-- [Project Structure](#project-structure)  
 - [Notes](#notes)    
 
 ---
@@ -51,11 +50,11 @@ These instructions will help you get a copy of the project running on your local
 
 1. Clone the repository
 
-git clone https://github.com/YourUsername/EmployeeManagementSystem.git
+- git clone https://github.com/YourUsername/EmployeeManagementSystem.git
 
 2. Open the solution in Visual Studio
 
-Open EmployeeManagementSystem.sln which contains the Windows Forms client and the API project. Restore NuGet packages if needed.
+- Open EmployeeManagementSystem.sln which contains the Windows Forms client and the API project. Restore NuGet packages if needed.
 
 ---
 
@@ -87,18 +86,6 @@ You can configure Visual Studio to start both projects at the same time:
 	- The API will start first (default: `http://localhost:5000`).  
 	- The Windows Forms app will launch and connect to the running API.
 	- Use buttons and try the Application.
-
----
-
-## Project Structure
-
-EmployeeManagementSystem/
-│
-├─ Employee_MS.API/           # ASP.NET Core Web API project
-├─ EmployeeListApplication/   # Windows Forms client application
-├─ Database/                  # Database scripts
-│   └─ database_setup.sql
-└─ EmployeeManagementSystem.sln
 
 ---
 
